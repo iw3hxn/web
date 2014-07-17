@@ -2501,7 +2501,7 @@ ul.oe-arrow-list li.oe-arrow-list-selected .oe-arrow-list-after {
 .openerp .oe_search-view-filters-management option,
 .openerp .oe_search-view-filters-management optgroup {
     font-style: normal;
-    color: black;
+    color: #ffffff;
 }
 
 /* Debug stuff */
@@ -2533,5 +2533,10 @@ padding-top: 0;
 
 .oe_debug_view {
     float: right;
+    color: #ffffff;
+}
+
+/*list view dropdown button*/
+.openerp .ui-widget select {
     color: #ffffff;
 }
