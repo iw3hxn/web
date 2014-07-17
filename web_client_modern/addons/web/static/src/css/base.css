@@ -432,7 +432,7 @@ label.error {
 .openerp .menu a:hover,
 .openerp .menu a:focus,
 .openerp .menu a.active {
-    background: #8e8e8e; /* Old browsers */
+    background: #2A3037; /* Old browsers */
     background: -moz-linear-gradient(top, #2A3037 0%, #2A3037 95%, #fd5f60 90%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2A3037), color-stop(95%,#2A3037), color-stop(90%,#fd5f60)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #2A3037 0%,#2A3037 95%,#fd5f60 90%); /* Chrome10+,Safari5.1+ */
@@ -848,11 +848,11 @@ label.error {
 
 .openerp .searchview_group_string {
     display: block;
-    color: #8e8e8e;
+    color: #fd5f60;
     font-weight: normal;
     padding: 1px 0 1px 10px;
     text-decoration: none;
-    text-shadow: #ffffff 0 1px 0;
+    text-shadow: #fd5f60 0 1px 0;
     
 }
 .openerp .searchview_group_string:hover {
@@ -1940,12 +1940,12 @@ e_form_header {
 
 .openerp .toggle-sidebar {
     cursor: pointer;
-    border: 0px solid #2A3037;
-    border-top-width: 0;
+    border: 0px solid #A7ACB3;
     display: block;
     background: url(/web/static/src/img/toggle-a-bg.png);
-    width: 21px;
-    height: 21px;
+    background-color: rgba(42, 48, 55, 0.60);
+    width: 24px;
+    height: 20px;
     z-index: 10;
 }
 .openerp .open-sidebar .toggle-sidebar {
