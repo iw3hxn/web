@@ -1048,9 +1048,9 @@ label.error {
     width: 90%;
 }
 
-/* .openerp .oe-listview .oe-record-selector, .openerp .oe-listview .oe-record-edit-link {
+/*.openerp .oe-listview .oe-record-selector, .openerp .oe-listview .oe-record-edit-link {
      border-bottom: 0px solid #4D5967;
- } */
+}*/
 
 .openerp .oe-listview .oe-record-selector, .openerp .oe-listview .oe-record-edit-link {
 }
@@ -1212,6 +1212,7 @@ label.error {
     -webkit-border-radius: 0;
     line-height: 20px;
     font-size: 95%;
+    color: #ffffff;
     text-shadow: #ffffff 0 0px 0;
     font-weight: normal;
 }
@@ -1266,14 +1267,14 @@ label.error {
     box-shadow: none;
     font-weight: bold;
 }
-.openerp .oe_form_buttons {
+.oe_form_buttons {
     position: relative;
     top: -5px;
 }
 
-.openerp .oe_form_header {
+.oe_form_header {
     overflow: auto;
-  padding: 3px 0 3px 2px;
+    padding: 3px 0 3px 2px;
     margin: 3px 0 3px 2px;
 }
 .openerp .oe_form_frame_cell input[type="checkbox"] {
@@ -1644,18 +1645,29 @@ label.error {
     padding:0;
 }
 
+.openerp .oe-binary-image {
+    width: 128px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 3px;
+    background: whitesmoke;
+}
+
 /* Widgets */
 .openerp .separator {
-    border: 0 solid #A7ACB3;
+    border: 0px solid #7C7BAD;
+    color: #7C7BAD;
 }
 .openerp .separator.horizontal {
     font-weight: bold;
-    font-style: oblique;
+    font-style: normal;
     border-bottom-width: 1px;
-    margin: 3px 4px 3px 1px;
-    height: 17px;
+    margin: 3px 4px 20px 1px;
+    height: 15px;
     font-size: 95%;
-    
+    text-align: center;
+    text-transform:uppercase;
 }
 .openerp .separator.horizontal:empty {
     height: 5px;
@@ -1734,7 +1746,7 @@ label.error {
     color: #ffffff;
 }
 .openerp .ui-widget-header {
-    background: #4D5967;
+    background: #4D5967 none;
 }
 
 /* progress bars */
@@ -1950,6 +1962,7 @@ label.error {
 .openerp .toggle-sidebar {
     cursor: pointer;
     border: 0px solid #A7ACB3;
+    border-top-width: 0px;
     display: block;
     background: url(/web/static/src/img/toggle-a-bg.png);
     background-color: rgba(42, 48, 55, 0.60);
@@ -2432,41 +2445,17 @@ ul.oe-arrow-list li.oe-arrow-list-selected .oe-arrow-list-after {
 }
 
 .openerp .oe_button:hover {
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: auto auto !important;
     background-size: 100% 100%;
-    background: #d04e4f none;
-    background: none, -webkit-gradient(linear, left top, left bottom, from(#d04e4f), to(#d04e4f));
-    background: none, -webkit-linear-gradient(#d04e4f, #d04e4f);
-    background: none, -moz-linear-gradient(#d04e4f, #d04e4f);
-    background: none, -o-linear-gradient(top, #d04e4f, #d04e4f);
-    background: none, -khtml-gradient(linear, left top, left bottom, from(#d04e4f), to(#d04e4f));
-    background: -ms-linear-gradient(top, #d04e4f, #d04e4f);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d04e4f', endColorstr='#d04e4f',GradientType=0 );
+    box-shadow: 0 2px 4px black inset;
     cursor: pointer;
 }
 
 .openerp .oe_button:focus {
-    border: 0px solid #fd5f60;
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: auto auto !important;
+    border: 1px solid #B34344;
     background-size: 100% 100%;
-    background: #fd5f60;
-    background: none, -webkit-gradient(linear, left top, left bottom, from(#fd5f60), to(#fd5f60));
-    background: none, -webkit-linear-gradient(#fd5f60, #fd5f60);
-    background: none, -moz-linear-gradient(#fd5f60, #fd5f60);
-    background: none, -o-linear-gradient(top, #fd5f60, #fd5f60);
-    background: none, -khtml-gradient(linear, left top, left bottom, from(#fd5f60), to(#fd5f60));
-    background: -ms-linear-gradient(top, #fd5f60, #fd5f60);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fd5f60', endColorstr='#fd5f60',GradientType=0 );
-    -moz-box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, 0.8) inset;
-    -webkit-box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, 0.8) inset;
-    -o-box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, 0.8) inset;
-    box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, 0.8) inset;
+    background: #B34344;
+    box-shadow: 0 4px 4px black inset;
 }
-
 .openerp .oe_button:active,
 .openerp .oe_button.active {
     background: #fd5f60;

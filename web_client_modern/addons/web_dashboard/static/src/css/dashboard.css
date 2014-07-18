@@ -76,6 +76,8 @@
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
+}
+
 .openerp .oe-dashboard-action .oe-dashboard-action-header .ui-icon {
     float: right;
 }
