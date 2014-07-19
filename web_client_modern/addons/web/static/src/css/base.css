@@ -1143,7 +1143,7 @@ label.error {
 .openerp a.oe_form_uri {
     vertical-align: middle;
     padding-top: 3px;
-    font-size: 100%;
+    font-size: 120%;
     color: #2A3037;
     font-weight: bold;
 }
@@ -1238,7 +1238,9 @@ label.error {
 }
 
 
-.openerp label.oe_label_help, .openerp label.oe_label,
+.openerp label.oe_label_help, .openerp label.oe_label {
+    font-size: 80%;
+}
 .openerp .oe_form_paragraph,
 .openerp .oe_form_field_statusbar,
 .openerp .oe_forms input[type="text"],
@@ -1247,14 +1249,16 @@ label.error {
 .openerp .oe_forms select,
 .openerp .oe_forms .oe_button,
 .openerp .oe_forms textarea {
-    font-size: 85%;
+    font-size: 120%;
     font-weight: normal;
+    padding-top: 2px;
 }
 
 .openerp label.oe_label_help, .openerp label.oe_label {
     display: block;
     color: #2A3037;
     font-weight: normal;
+    padding-top: 3px;
 }
 .openerp label.oe_label_help {
     cursor: help;
@@ -1392,13 +1396,12 @@ label.error {
 .openerp .oe_forms input[type="text"],
 .openerp .oe_forms input[type="password"],
 .openerp .oe_forms input[type="file"],
-.openerp .oe_forms select,
 .openerp .oe_forms textarea {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 2px;
+    padding: 0 10px;
     margin: 0 2px;
     border: 0px solid #E1E1F7;
     border-radius: 3px;
@@ -1406,6 +1409,13 @@ label.error {
     min-width: 90px;
     color: #2A3037;
     font-weight: bold;
+}
+.openerp .oe_forms select {
+    font-size: 100%;
+    padding: 0 4px;
+    background: #E1E1F7;
+    min-height: 24px;
+    
 }
 
 .openerp .oe_forms input.field_many2one,
@@ -1533,8 +1543,8 @@ label.error {
 }
 
 .openerp .oe-binary-image {
-    width: 128px;
-    height: auto;
+    width: auto;
+    height: 96px;
     text-align: center;
     overflow: hidden;
     border-radius: 3px;
@@ -2285,24 +2295,24 @@ ul.oe-arrow-list li.oe-arrow-list-selected .oe-arrow-list-after {
 .openerp .oe_button:visited,
 .openerp .oe_button {
     display: inline-block;
-    border: 1px solid #fd5f60;
+    border: 1px solid #C77B74;
     color: #ffffff;
     text-shadow: #ffffff 0 1px 0;
     font-size: 12px;
-    padding: 3px 10px;
+    padding: 0px 10px;
     text-align: center;
     -o-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -webkit-background-size: auto auto !important;
     background-size: 100% 100%;
-    background: #fd5f60 none;
-    background: none, -webkit-gradient(linear, left top, left bottom, from(#fd5f60), to(#fd5f60));
-    background: none, -webkit-linear-gradient(#fd5f60, #fd5f60);
-    background: none, -moz-linear-gradient(#fd5f60, #fd5f60);
-    background: none, -o-linear-gradient(top, #fd5f60, #fd5f60);
-    background: none, -khtml-gradient(linear, left top, left bottom, from(#fd5f60), to(#fd5f60));
-    background: -ms-linear-gradient(top, #fd5f60, #fd5f60);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fd5f60', endColorstr='#fd5f60',GradientType=0 );
+    background: #C77B74 none;
+    background: none, -webkit-gradient(linear, left top, left bottom, from(#C77B74), to(#C77B74));
+    background: none, -webkit-linear-gradient(#C77B74, #C77B74);
+    background: none, -moz-linear-gradient(#C77B74, #C77B74);
+    background: none, -o-linear-gradient(top, #C77B74, #C77B74);
+    background: none, -khtml-gradient(linear, left top, left bottom, from(#C77B74), to(#C77B74));
+    background: -ms-linear-gradient(top, #C77B74, #C77B74);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C77B74', endColorstr='#C77B74',GradientType=0 );
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     -o-border-radius: 3px;
