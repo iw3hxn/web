@@ -9,7 +9,7 @@
 .openerp .oe-dashboard-action {
     margin: 0 0.5em 0.5em 0;
     padding: 0px;
-    background-color: #4D5967; /* View Widget Background */
+    background-color: #f1f1f1; /* View Widget Background */
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;

@@ -469,28 +469,28 @@
 }
 
 /*HR kanban view override*/
-.openerp .oe_employee_details {
-    color: #ffffff !important;
-}
-
-.openerp .oe_employee_details h4 a {
-  color: #fd5f60 !important;
-}
-
-/*Modules kanban override*/
-.openerp .oe_module_desc {
-  color: #ffffff !important;
-}
-
-.openerp .oe_module_desc h4 a {
-  color: #fd5f60 !important;
-}
-
-/*Product kanban override*/
-.openerp .oe_product_desc h4 a {
-    color: #fd5f60 !important;
-}
-
-.openerp .oe_product_desc {
-    color: #ffffff !important;
-}
+/*.openerp .oe_employee_details {*/
+/*    color: #ffffff !important;*/
+/*}*/
+/**/
+/*.openerp .oe_employee_details h4 a {*/
+/*  color: #fd5f60 !important;*/
+/*}*/
+/**/
+/*/*Modules kanban override*/*/
+/*.openerp .oe_module_desc {*/
+/*  color: #ffffff !important;*/
+/*}*/
+/**/
+/*.openerp .oe_module_desc h4 a {*/
+/*  color: #fd5f60 !important;*/
+/*}*/
+/**/
+/*/*Product kanban override*/*/
+/*.openerp .oe_product_desc h4 a {*/
+/*    color: #fd5f60 !important;*/
+/*}*/
+/**/
+/*.openerp .oe_product_desc {*/
+/*    color: #ffffff !important;*/
+/*}*/
