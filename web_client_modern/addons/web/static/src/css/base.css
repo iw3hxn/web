@@ -373,13 +373,19 @@ label.error {
     height: 24px;
     background: #C7C0BE;
     float: left;
-    position: absolute;
+    position: fixed;
     margin-top: 0px;
     margin-left: 200px;
+    z-index: 999;
 }
 .openerp .menu td {
     text-align: center;
     padding:0;
+}
+.fixedmenu {
+    position:fixed;
+    top:0;
+    z-index: 999;
 }
 /* Menu Buttons */
 .openerp .menu a {
@@ -468,14 +474,19 @@ label.error {
     position: static;
 }
 .openerp .secondary_menu.oe_folded .oe_secondary_menu.active {
-    position: absolute;
+    position: fixed;
     margin-left: 200px;
     margin-top: 20px;
-    z-index: 100;
+    z-index: 999;
     border: 0px solid #7C7BAD;
     border-color: #7C7BAD;
     border-radius: 4px;
     min-width: 200px;
+}
+.fixedsecondary {
+    position:fixed;
+    top: 20px;
+    z-index: 999;
 }
 .openerp .secondary_menu a {
     display: block;
