@@ -692,7 +692,7 @@ label.error {
     box-shadow: 0 1px 1px #C7C0BE, 0 1px 1px #F1F1F1 inset;
 }
 .openerp .filter_label:hover, .openerp .filter_icon:hover {
-    background: none;
+    background: #C7C0BE;
     box-shadow: 0 1px 2px #F1F1F1, 0 1px 1px #C7C0BE inset;
     color: #7C7BAD;
 }
@@ -703,10 +703,10 @@ label.error {
 }
 
 .openerp .filter_label.enabled, .openerp .filter_icon.enabled {
-    background: none;
+    background: #C7C0BE;
     filter: none;
-    box-shadow: 0 1px 2px #F1F1F1, 0 1px 1px #C7C0BE inset;
-    color: #7C7BAD;
+    box-shadow: 0 1px 2px #F1F1F1, 0 1px 1px #4D5967 inset;
+    color: #fffffc;
     font-weight: bold;
     text-shadow: #fffffc 0 0px 0;
 }
