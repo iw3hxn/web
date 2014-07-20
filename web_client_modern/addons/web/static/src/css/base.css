@@ -688,6 +688,7 @@ label.error {
 }
 
 .openerp .filter_label, .openerp .filter_icon {
+.openerp .filter_label, .openerp .filter_icon {
     background: #fffffc;
     box-shadow: 0 1px 1px #C7C0BE, 0 1px 1px #F1F1F1 inset;
 }
@@ -697,20 +698,21 @@ label.error {
     color: #7C7BAD;
 }
 .openerp .filter_label:active, .openerp .filter_icon:active {
-    background: none;
+    background: #C7C0BE;
     box-shadow: 0 1px 2px #F1F1F1, 0 1px 1px #C7C0BE inset;
-    color: #7C7BAD;
+    color: #fffffc;
 }
 
 .openerp .filter_label.enabled, .openerp .filter_icon.enabled {
-    background: none;
+    background: #C7C0BE;
     filter: none;
-    box-shadow: 0 1px 2px #F1F1F1, 0 1px 1px #C7C0BE inset;
-    color: #7C7BAD;
+    box-shadow: 0 1px 2px #F1F1F1, 0 1px 1px #4D5967 inset;
+    color: #fffffc;
     font-weight: bold;
+    text-shadow: #fffffc 0 0px 0;
 }
 .openerp .filter_icon {
-    height: 22px;
+    height: 24px;
     padding: 1px 2px 0 2px;
     margin: 0;
     vertical-align: bottom;
@@ -1247,11 +1249,15 @@ label.error {
 .openerp .oe_forms input[type="password"],
 .openerp .oe_forms input[type="file"],
 .openerp .oe_forms select,
-.openerp .oe_forms .oe_button,
 .openerp .oe_forms textarea {
     font-size: 120%;
     font-weight: normal;
     padding-top: 2px;
+}
+.openerp .oe_forms .oe_button {
+    font-size: 120%;
+    font-weight: normal;
+    padding-top: 0px;
 }
 
 .openerp label.oe_label_help, .openerp label.oe_label {
