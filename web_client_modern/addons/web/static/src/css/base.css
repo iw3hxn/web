@@ -1128,7 +1128,7 @@ label.error {
     border-width: 0px;
 }
 .openerp .oe_form_notebook .ui-tabs-selected {
-    background: #C7C0BE;
+    background: #fffffc;
     box-shadow: 0 0px 0px whitesmoke inset;
     border-width: 0px;
     border-radius: 8px;
@@ -1647,7 +1647,7 @@ label.error {
     color: #2A3037;
 }
 .openerp .ui-widget-header {
-    background: #f1f1f1 none;
+    background: #C7C0BE none;
 }
 
 /* progress bars */
