@@ -1469,7 +1469,7 @@ label.error {
 .openerp .oe_forms select[disabled],
 .openerp .oe_forms textarea[disabled]{
     background: #f1f1f1 !important;
-    color: #2A3037;
+    color: #4D5967 !important;
 }
 .openerp .oe_forms textarea {
     resize:vertical;
@@ -1591,11 +1591,14 @@ label.error {
 }
 /*MANDATORY FIELDS*/
 .openerp td.required input,
-.openerp td.required select,
-.openerp td.required textarea,
-.openerp td.required table.oe-listview-content {
+.openerp td.required textarea {
     background-color: #7C7BAD !important;
     color: #fffffc !important;
+}
+.openerp td.required select,
+.openerp td.required table.oe-listview-content {
+    background-color: #f1f1f1 !important;
+    color: #4D5967 !important;
 }
 .openerp td.invalid input, .openerp td.invalid select, .openerp td.invalid textarea {
     background-color: #CC5146 !important;
