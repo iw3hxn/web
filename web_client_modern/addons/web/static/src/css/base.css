@@ -1174,9 +1174,11 @@ label.error {
 }
 .openerp .oe_form_dirty > .oe_form_header > .oe_form_buttons > .oe_form_button_save {
     color: #2A3037;
-    background: #f1f1f1;
+    background: yellow;
     box-shadow: none;
     font-weight: bold;
+    border-color: #CC5146;
+    border-width: 2px;
 }
 .oe_form_buttons {
     position: relative;
