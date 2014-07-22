@@ -1182,12 +1182,7 @@ label.error {
     position: relative;
     top: 5px;
 }
-.oe_form_button_save,
-.oe_form_button_cancel,
-.oe_form_button_edit {
-    position: relative;
-    top: -5px;
-}
+
 .oe_form_header {
     overflow: auto;
     padding: 3px 0 3px 2px;
@@ -2401,6 +2396,7 @@ ul.oe-arrow-list li.oe-arrow-list-selected .oe-arrow-list-after {
     margin: 2px 2px;
     height: 24px;
     width: 24px;
+    margin-top: -5px;
 }
 .openerp select.oe_search-view-filters-management {
     font-style: oblique;
