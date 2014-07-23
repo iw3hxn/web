@@ -1189,6 +1189,7 @@ label.error {
     overflow: auto;
     padding: 3px 0 3px 2px;
     margin: 3px 0 3px 2px;
+    height: 25px;
 }
 .openerp .oe_form_frame_cell input[type="checkbox"] {
     margin-top: 3px;
