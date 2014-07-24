@@ -1601,9 +1601,14 @@ label.error {
     background-color: #7C7BAD !important;
     color: #fffffc !important;
 }
-.openerp td.required select,
+.openerp td.required select {
+    background-color: #E1E1F7;
+    color: #4D5967;
+    font-weight: bold;
+}
+
 .openerp td.required table.oe-listview-content {
-    background-color: #f1f1f1 !important;
+    background-color: #E1E1F7 !important;
     color: #4D5967 !important;
 }
 .openerp td.invalid input, .openerp td.invalid select, .openerp td.invalid textarea {
