@@ -1164,6 +1164,7 @@ label.error {
 .openerp a.oe_form_uri {
     color: #7C7BAD;
     line-height: 12px;
+    padding-top: 6px;
 }
 
 
