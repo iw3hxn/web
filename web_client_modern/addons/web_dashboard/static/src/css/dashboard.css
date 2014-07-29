@@ -184,8 +184,8 @@
     margin: 0 0 0.5em 0;
 }
 .openerp .oe-dashboard-config-overview .oe-config-tip {
-    color: #ffffff;
-    text-shadow: #ffffff 0 0px 0;
+    color: #2A3037;
+    text-shadow: #2A3037 0 0px 0;
     text-align: center;
 }
 .openerp .oe-dashboard-config-overview dt {
@@ -218,7 +218,7 @@
 
 .openerp .oe-dashboard-config-overview li.oe-done {
     cursor: default;
-    color: #ffffff;
+    color: #A7ACB3;
 }
 
 .openerp .oe-dashboard-layout_2-1 .index_0 .oe-dashboard-config-overview ul,
