@@ -658,10 +658,10 @@ openerp.web.Connection = openerp.web.CallbackEnabled.extend( /** @lends openerp.
     /**
      * The session is validated either by login or by restoration of a previous session
      */
-    session_authenticate: function(db, login, password, _volatile) {
+    session_authenticate: function(db, login, password, yubikey, _volatile) {
         var self = this;
         var base_location = document.location.protocol + '//' + document.location.host;
-        var params = { db: db, login: login, password: password, base_location: base_location };
+        var params = { db: db, login: login, password: password, base_location: base_location, yubikey: yubikey };
         return this.rpc("/web/session/authenticate", params).pipe(function(result) {
             _.extend(self, {
                 session_id: result.session_id,

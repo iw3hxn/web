@@ -62,17 +62,18 @@ class OpenERPSession(object):
     def proxy(self, service):
         return self.build_connection().get_service(service)
 
-    def bind(self, db, uid, login, password):
+    def bind(self, db, uid, login, password, yubikey):
         self._db = db
         self._uid = uid
         self._login = login
         self._password = password
+        self._yubikey = yubikey
 
     def authenticate(self, db, login, password, env):
         # TODO use the openerplib API once it exposes authenticate()
         uid = self.proxy('common').authenticate(db, login, password, env)
-        self.bind(db, uid, login, password)
-        
+        yubikey = env.get('yubikey', False)
+        self.bind(db, uid, login, password, yubikey)
         if uid: self.get_context()
         return uid
 

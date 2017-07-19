@@ -40,6 +40,7 @@ openerp.web_mobile.Login =  openerp.web.OldWidget.extend({
         this.remember_creditentials = true;
         this.selected_login = null;
         this.selected_password = null;
+        this.selected_yubikey = null;
         if (this.has_local_storage && this.remember_creditentials) {
             this.selected_login = localStorage.getItem('last_login_login_success');
             this.selected_password = localStorage.getItem('last_password_login_success');

@@ -481,6 +481,7 @@ class Session(openerpweb.Controller):
     _cp_path = "/web/session"
 
     def session_info(self, req):
+        #import pdb; pdb.set_trace()
         req.session.ensure_valid()
         return {
             "session_id": req.session_id,
@@ -496,7 +497,7 @@ class Session(openerpweb.Controller):
         return self.session_info(req)
 
     @openerpweb.jsonrequest
-    def authenticate(self, req, db, login, password, base_location=None):
+    def authenticate(self, req, db, login, password, yubikey, base_location=None):
         wsgienv = req.httprequest.environ
         release = common.release
         env = dict(
@@ -504,9 +505,9 @@ class Session(openerpweb.Controller):
             HTTP_HOST=wsgienv['HTTP_HOST'],
             REMOTE_ADDR=wsgienv['REMOTE_ADDR'],
             user_agent="%s / %s" % (release.name, release.version),
+            yubikey=yubikey
         )
         req.session.authenticate(db, login, password, env)
-
         return self.session_info(req)
 
     @openerpweb.jsonrequest

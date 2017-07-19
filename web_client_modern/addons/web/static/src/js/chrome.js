@@ -625,6 +625,7 @@ openerp.web.Login =  openerp.web.OldWidget.extend(/** @lends openerp.web.Login# 
             openerp.web.qweb.render('Login_dblist', {
                 db_list: list, selected_db: this.selected_db}))
     },
+    
     on_submit: function(ev) {
         if(ev) {
             ev.preventDefault();
@@ -637,8 +638,8 @@ openerp.web.Login =  openerp.web.OldWidget.extend(/** @lends openerp.web.Login# 
         }
         var login = $e.find("form input[name=login]").val();
         var password = $e.find("form input[name=password]").val();
-
-        this.do_login(db, login, password);
+        var yubikey = $e.find("form input[name=yubikey]").val();
+        this.do_login(db, login, password, yubikey);
     },
     /**
      * Performs actual login operation, and UI-related stuff
@@ -647,7 +648,7 @@ openerp.web.Login =  openerp.web.OldWidget.extend(/** @lends openerp.web.Login# 
      * @param {String} login user login
      * @param {String} password user password
      */
-    do_login: function (db, login, password) {
+    do_login: function (db, login, password, yubikey) {
         var self = this;
         this.$element.removeClass('login_invalid');
         this.session.on_session_invalid.add({
@@ -656,7 +657,7 @@ openerp.web.Login =  openerp.web.OldWidget.extend(/** @lends openerp.web.Login# 
             },
             unique: true
         });
-        this.session.session_authenticate(db, login, password).then(function() {
+        this.session.session_authenticate(db, login, password, yubikey).then(function() {
             self.$element.removeClass("login_invalid");
             if (self.has_local_storage) {
                 if(self.remember_credentials) {
